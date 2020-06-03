@@ -1,18 +1,18 @@
 import Head from 'next/head'
 import { Page, Text, Card, Note, Code, Spacer } from '@zeit-ui/react'
 
-export default function Home() {
+export default function About() {
   return (
     <Page>
       <Head>
-        <title>Create Next App</title>
+        <title>About</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Text h1>
-        Welcome to <a href="/about">Next.js!</a>
+        aaaaaa
       </Text>
       <Card>
-        hello, world!
+        hello, world. I am using <Code>@zeit-ui/react</Code> !
         </Card>
       <Spacer y={1.5} />
       <Card shadow>

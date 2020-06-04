@@ -4,8 +4,15 @@ import { Header } from '../components/header/Header'
 
 function MyApp({ Component, pageProps }) {
   const [themeType, setThemeType] = useState('light')
+  const [showAfterRender, setShowAfterRender] = useState(false)
 
-  useEffect(() => {
+  const flickerStuff = () => {
+    document.documentElement.removeAttribute('style')
+    document.body.removeAttribute('style')
+    setShowAfterRender(true)
+  }
+
+  const themeStuff = () => {
     const savedTheme = localStorage.getItem('theme')
     savedTheme && setThemeType(savedTheme)
     if (!savedTheme) {
@@ -15,32 +22,39 @@ function MyApp({ Component, pageProps }) {
         localStorage.setItem('theme', 'dark')
       }
     }
-  }, [])
+  }
 
   const switchThemes = () => {
     setThemeType(themeType === 'dark' ? 'light' : 'dark')
     localStorage.setItem('theme', themeType === 'dark' ? 'light' : 'dark')
   }
 
-  return (
-    <>
-      <ZeitProvider theme={{ type: themeType }}>
-        <CssBaseline />
-        <Header parentCallback={switchThemes} theme={themeType} />
-        <Component {...pageProps} />
-      </ZeitProvider>
+  useEffect(() => {
+    flickerStuff()
+    themeStuff()
+  }, [])
 
-      <style global jsx>{`
-        .container {
-          width: 750pt;
-          max-width: 100vw;
-          margin: 0 auto;
-          padding: 0 16pt;
-          box-sizing: border-box;
-          position: relative;
-        }
-      `}</style>
-    </>
+  return (
+    !showAfterRender
+      ? null
+      : <>
+        <ZeitProvider theme={{ type: themeType }}>
+          <CssBaseline />
+          <Header parentCallback={switchThemes} theme={themeType} />
+          <Component {...pageProps} />
+        </ZeitProvider>
+
+        <style global jsx>{`
+          .container {
+            width: 750pt;
+            max-width: 100vw;
+            margin: 0 auto;
+            padding: 0 16pt;
+            box-sizing: border-box;
+            position: relative;
+          }
+        `}</style>
+      </>
   );
 }
 export default MyApp

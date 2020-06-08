@@ -26,7 +26,9 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en-us">
-        <Head />
+        <Head>
+          <link rel="preconnect" href="https://fonts.gstatic.com/" />
+        </Head>
         <body>
           <script dangerouslySetInnerHTML={{
             __html: `

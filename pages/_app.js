@@ -53,6 +53,10 @@ function MyApp({ Component, pageProps }) {
             box-sizing: border-box;
             position: relative;
           }
+
+          *:focus {
+            outline: -webkit-focus-ring-color auto 1px !important;
+          }
         `}</style>
       </>
   );

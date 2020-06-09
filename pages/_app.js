@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { CssBaseline, ZeitProvider } from '@zeit-ui/react'
-import { Header } from '../components/header/Header'
+import { Header } from '../components/Header'
 
 function MyApp({ Component, pageProps }) {
   const [themeType, setThemeType] = useState('light')
@@ -45,6 +45,10 @@ function MyApp({ Component, pageProps }) {
         </ZeitProvider>
 
         <style global jsx>{`
+          #__next main {
+            padding: 0;
+          }
+
           .container {
             width: 750pt;
             max-width: 100vw;

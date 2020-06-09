@@ -1,15 +1,16 @@
-import { Button, Grid, Spacer, Text } from '@zeit-ui/react'
+import { Button, Grid, Spacer, Text, useTheme } from '@zeit-ui/react'
 import Link from 'next/link'
 
 const IntroWrapper = () => {
+  const { palette } = useTheme()
   return (
-    <div className='dioo'>
-      <Text h1 style={{ fontSize: '64px', lineHeight: '64px' }}>
-        Juan Helbert
+    <div className='intro-wrapper'>
+      <Text h1 size={64} style={{ lineHeight: '64px', fontWeight: 800, marginBottom: 0 }}>
+        Juan<br />Helbert
       </Text>
       <Grid.Container>
         <Grid xs={24} sm={11}>
-          <Text p style={{ fontSize: '18px' }}>
+          <Text p size={18}>
             I'm a multidisciplinary Software Engineer with a solid knowledge in frontend. I aim to build apps that put user experience and accessibility to the forefront.
           </Text>
         </Grid>
@@ -21,13 +22,21 @@ const IntroWrapper = () => {
           <Link href="/contact"><Button shadow type="success">Contact me</Button></Link>
         </Grid>
         <Grid>
-          <Link href="/projects"><Button shadow>View projects</Button></Link>
+          <Link href="/projects"><Button shadow style={{ color: palette.accents_7, borderColor: palette.accents_7 }}>View projects</Button></Link>
         </Grid>
       </Grid.Container>
 
       <style global jsx>{`
+        .intro-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          justify-content: center;
+          min-height: calc(100vh - 55px);
+        }
+
         @media only screen and (max-width: 470px) {
-          .grid .item, .grid .btn {
+          .intro-wrapper .grid .item, .intro-wrapper .grid .btn {
             width: 100%;
           }
         }

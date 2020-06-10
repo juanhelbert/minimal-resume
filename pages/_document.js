@@ -28,6 +28,10 @@ class MyDocument extends Document {
       <Html lang="en-us">
         <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com/" />
+          <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+          <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+          <link href="https://www.google-analytics.com" rel="preconnect" crossorigin />
+          <link href="https://www.googletagmanager.com" rel="preconnect" crossorigin />
         </Head>
         <body>
           <script dangerouslySetInnerHTML={{

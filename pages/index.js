@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Page, Spacer, useTheme } from '@zeit-ui/react'
 import { IntroWrapper } from '../components/IntroWrapper'
 import { HomeText } from '../components/HomeText'
+import { HomeProjects } from '../components/HomeProjects'
 
 export default function Home() {
   const { palette } = useTheme()
@@ -25,6 +26,7 @@ export default function Home() {
         content={`As a Frontend developer I have developed a lot of sites, always keeping the focus on <b style="color: ${palette.accents_7}">UI/UX</b>, the <b style="color: ${palette.accents_7}">accessibility</b> and never leaving aside the <b style="color: ${palette.accents_7}">performance</b>.`}
         extra={"Some projects I've been worked on:"}
       />
+      <HomeProjects />
     </Page >
   )
 }

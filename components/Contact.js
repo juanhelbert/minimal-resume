@@ -30,7 +30,7 @@ const Contact = () => {
           <Grid xs={24} sm={12} md>
             <Card shadow>
               <Text b style={{ display: 'flex' }}>
-                {i.icon} <a href={i.link} target='_blank' style={{ color: palette.foreground, marginLeft: '10px' }}>{i.title}</a>
+                {i.icon} <a href={i.link} target='_blank' rel="noopener" style={{ color: palette.foreground, marginLeft: '10px' }}>{i.title}</a>
               </Text>
             </Card>
           </Grid>

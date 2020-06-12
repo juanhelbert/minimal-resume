@@ -35,12 +35,12 @@ const HomeProjects = () => {
         <Spacer />
         <Grid.Container gap={1} justify="flex-start" className='grid'>
           <Grid >
-            <a href={web} target='_blank'><Button type="success" size="small" shadow>Visit</Button></a>
+            <a href={web} target='_blank' rel="noopener"><Button type="success" size="small" shadow>Visit</Button></a>
           </Grid>
           <Grid>
             {repo
               ? (
-                <a href={repo} target='_blank'><Button size="small" shadow style={{ color: palette.accents_7, borderColor: palette.accents_7 }} icon={<Github color={palette.accents_7} />}>Repo</Button></a>
+                <a href={repo} target='_blank' rel="noopener"><Button size="small" shadow style={{ color: palette.accents_7, borderColor: palette.accents_7 }} icon={<Github color={palette.accents_7} />}>Repo</Button></a>
               ) : (
                 <Tooltip text={"It's a private repo 🙁"} placement='bottom' trigger='click'>
                   <Button size="small" disabled icon={<Github />}>Repo</Button>
@@ -54,7 +54,7 @@ const HomeProjects = () => {
 
   const ProjectImage = ({ web, img, title }) => {
     return (
-      <Image.Browser url={web}>
+      <Image.Browser url={web} >
         <Image width="540" height="246" src={img} alt={title} />
       </Image.Browser>
     )

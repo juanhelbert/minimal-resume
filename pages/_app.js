@@ -45,6 +45,10 @@ function MyApp({ Component, pageProps }) {
         </ZeitProvider>
 
         <style global jsx>{`
+          *:focus {
+            outline: -webkit-focus-ring-color auto 1px !important;
+          }
+          
           #__next main {
             padding: 0;
           }
@@ -56,10 +60,6 @@ function MyApp({ Component, pageProps }) {
             padding: 0 16pt;
             box-sizing: border-box;
             position: relative;
-          }
-
-          *:focus {
-            outline: -webkit-focus-ring-color auto 1px !important;
           }
         `}</style>
       </>

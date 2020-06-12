@@ -3,6 +3,7 @@ import { Page, Spacer, useTheme } from '@zeit-ui/react'
 import { IntroWrapper } from '../components/IntroWrapper'
 import { HomeText } from '../components/HomeText'
 import { HomeProjects } from '../components/HomeProjects'
+import { Contact } from '../components/Contact'
 
 export default function Home() {
   const { palette } = useTheme()
@@ -20,13 +21,19 @@ export default function Home() {
         title='About me'
         content="I'm a 24 years old Software Engineer, passionate about learning and solving problems. I love creating clean code, researching new technologies and growing in the process."
       />
-      <Spacer y={6} />
+      <Spacer y={8} />
       <HomeText
         title='A web enthusiast'
         content={`As a Frontend developer I have developed a lot of sites, always keeping the focus on <b style="color: ${palette.accents_7}">UI/UX</b>, the <b style="color: ${palette.accents_7}">accessibility</b> and never leaving aside the <b style="color: ${palette.accents_7}">performance</b>.`}
         extra={"Some projects I've been worked on:"}
       />
       <HomeProjects />
+      <Spacer y={8} />
+      <div id='contact'>
+        <HomeText title='Contact' />
+        <Contact />
+      </div>
+      <Spacer y={2} />
     </Page >
   )
 }

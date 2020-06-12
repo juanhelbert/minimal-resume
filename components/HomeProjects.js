@@ -1,4 +1,5 @@
 import { Button, Card, Grid, Image, Text, Tooltip, Spacer, useMediaQuery, useTheme } from '@zeit-ui/react'
+import Link from 'next/link'
 import { Github } from '@zeit-ui/react-icons'
 
 const data = [
@@ -7,18 +8,18 @@ const data = [
     description: 'Cool things with only one div and pure CSS.',
     web: 'https://only-one-div.now.sh/',
     repo: 'https://github.com/juanhelbert/Only-one-div',
-    img: 'https://s3.amazonaws.com/awesomescreenshot/upload/1043125/1077435/a68a0c35-7227-4e82-7b4a-28b966e4ce33.png?AWSAccessKeyId=AKIAJSCJQ2NM3XLFPVKA&Expires=1591836359&Signature=s620WqqSaxEeOpspluEVm7axVXE%3D'
+    img: '/images/only_one_div.jpg'
   }, {
     title: 'Global Breath',
     description: 'The challenge was to have it done ASAP in order to tackle the covid-19 globally.',
     web: 'https://theglobalbreath.com/',
-    img: 'https://s3.amazonaws.com/awesomescreenshot/upload/1043125/1077435/db2cab2e-429e-4f90-50f2-ba45dc94b043.png?AWSAccessKeyId=AKIAJSCJQ2NM3XLFPVKA&Expires=1591837304&Signature=FaNxpd%2FroqtJb%2FcHyvzPYJ9xbXU%3D'
+    img: '/images/global_breath.jpg'
   }, {
     title: 'Rick and Morty',
     description: 'An app made with GraphQL to search characters',
     web: 'https://rickandmorty-jh.netlify.app/',
     repo: 'https://github.com/juanhelbert/Rick-and-Morty',
-    img: 'https://s3.amazonaws.com/awesomescreenshot/upload/1043125/1077435/8f39f300-6d32-4311-5ad0-afddccd1f5ae.png?AWSAccessKeyId=AKIAJSCJQ2NM3XLFPVKA&Expires=1591838172&Signature=bkG0SMSXV2mw5ALmB3002FbEGGY%3D'
+    img: '/images/rick_and_morty.jpg'
   }
 ]
 
@@ -41,7 +42,7 @@ const HomeProjects = () => {
               ? (
                 <a href={repo} target='_blank'><Button size="small" shadow style={{ color: palette.accents_7, borderColor: palette.accents_7 }} icon={<Github color={palette.accents_7} />}>Repo</Button></a>
               ) : (
-                <Tooltip text={"It's a private repo :("} placement='right' trigger='click'>
+                <Tooltip text={"It's a private repo 🙁"} placement='bottom' trigger='click'>
                   <Button size="small" disabled icon={<Github />}>Repo</Button>
                 </Tooltip>
               )}
@@ -96,6 +97,13 @@ const HomeProjects = () => {
           </Grid>
         </Grid.Container>
       </div>
+
+      <div className='custom-row'>
+        <Grid.Container justify="center">
+          <Link href="/projects"><Button shadow type="success" size='large'>View all projects</Button></Link>
+        </Grid.Container>
+      </div>
+
 
       <style global jsx>{`
         #__next .custom-row {

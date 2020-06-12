@@ -19,7 +19,7 @@ const IntroWrapper = () => {
       <Spacer />
       <Grid.Container gap={2} justify="flex-start" className='grid'>
         <Grid >
-          <Link href="/contact"><Button shadow type="success">Contact me</Button></Link>
+          <Link href="#contact"><Button shadow type="success">Contact me</Button></Link>
         </Grid>
         <Grid>
           <Link href="/projects"><Button shadow style={{ color: palette.accents_7, borderColor: palette.accents_7 }}>View projects</Button></Link>
@@ -32,6 +32,7 @@ const IntroWrapper = () => {
           flex-wrap: wrap;
           flex-direction: column;
           justify-content: center;
+          padding-bottom: 20px;
           min-height: calc(100vh - 55px);
         }
 

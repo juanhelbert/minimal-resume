@@ -46,7 +46,7 @@ class MyDocument extends Document {
           `}} />
           <Main />
           <NextScript />
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168587762-1"></script>
+          {/* <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168587762-1"></script>
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -57,7 +57,7 @@ class MyDocument extends Document {
             gtag('config', 'UA-168587762-1')
               `,
             }}
-          />
+          /> */}
         </body>
       </Html>
     );

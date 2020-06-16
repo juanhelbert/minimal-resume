@@ -5,18 +5,18 @@ import { Github } from '@zeit-ui/react-icons'
 const data = [
   {
     title: 'Only one div',
-    description: 'Cool things with only one div and pure CSS.',
+    description: 'I wanted to improve my CSS skills so I decided to do it in a fun way, creating cool things with pure CSS but following a critical rule: just a div for each of them.',
     web: 'https://only-one-div.now.sh/',
     repo: 'https://github.com/juanhelbert/Only-one-div',
     img: '/images/only_one_div.jpg'
   }, {
     title: 'Global Breath',
-    description: 'The challenge was to have it done ASAP in order to tackle the covid-19 globally.',
+    description: 'The need to have it as soon as possible to combat covid-19 globally was a big challenge. The complexity of adding regionalization and having to position it correctly through SEO was also added.',
     web: 'https://theglobalbreath.com/',
     img: '/images/global_breath.jpg'
   }, {
     title: 'Rick and Morty',
-    description: 'An app made with GraphQL to search characters',
+    description: "At that time I was starting with GraphQL so I used it to search and get information about the characters from the Rick and Morty's show.",
     web: 'https://rickandmorty-jh.netlify.app/',
     repo: 'https://github.com/juanhelbert/Rick-and-Morty',
     img: '/images/rick_and_morty.jpg'
@@ -30,7 +30,7 @@ const HomeProjects = () => {
   const TextAndButtons = ({ title, description, web, repo }) => {
     return (
       <Card type='lite' className='custom-card'>
-        <Text h2 style={{ marginBottom: 0 }}>{title}</Text>
+        <Text h2 style={{ marginBottom: 0, fontSize: isSM ? '28px' : '36px' }}>{title}</Text>
         <Text p style={{ marginTop: 0, color: palette.accents_6 }}>{description}</Text>
         <Spacer />
         <Grid.Container gap={1} justify="flex-start" className='grid'>
@@ -54,7 +54,7 @@ const HomeProjects = () => {
 
   const ProjectImage = ({ web, img, title }) => {
     return (
-      <Image.Browser url={web} >
+      <Image.Browser url={web}>
         <Image width="540" height="246" src={img} alt={title} />
       </Image.Browser>
     )
@@ -63,7 +63,7 @@ const HomeProjects = () => {
   return (
     <>
       {/* Only one div */}
-      <div className='custom-row'>
+      <div className='custom-row' style={{ paddingTop: isSM && 0 }}>
         <Grid.Container justify="space-between">
           <Grid xs={24} md={11}>
             <TextAndButtons title={data[0].title} description={data[0].description} web={data[0].web} repo={data[0].repo} />

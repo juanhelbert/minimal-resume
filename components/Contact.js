@@ -24,19 +24,29 @@ const data = [
 const Contact = () => {
   const { palette } = useTheme()
   return (
-    <Card type='lite'>
-      <Grid.Container gap={2} justify="center">
-        {data.map(i => (
-          <Grid xs={24} sm={12} md>
-            <Card shadow>
-              <Text b style={{ display: 'flex' }}>
-                {i.icon} <a href={i.link} target='_blank' rel="noopener" style={{ color: palette.foreground, marginLeft: '10px' }}>{i.title}</a>
-              </Text>
-            </Card>
-          </Grid>
-        ))}
-      </Grid.Container>
-    </Card>
+    <>
+      <Card type='lite' className='custom-card'>
+        <Grid.Container gap={2} justify="center" style={{ paddingLeft: 0, paddingRight: 0 }}>
+          {data.map(i => (
+            <Grid xs={24} sm={12} md key={i.title}>
+              <Card shadow>
+                <Text b style={{ display: 'flex' }}>
+                  {i.icon} <a href={i.link} target='_blank' rel="noopener" style={{ color: palette.foreground, marginLeft: '10px' }}>{i.title}</a>
+                </Text>
+              </Card>
+            </Grid>
+          ))}
+        </Grid.Container>
+      </Card>
+
+      <style global jsx>{`
+        #__next .custom-card > .content {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+      `}</style>
+    </>
   )
 }
 

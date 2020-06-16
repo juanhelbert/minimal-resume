@@ -11,14 +11,14 @@ const HomeText = ({ title, content, extra }) => {
       marginBottom: 0
     },
     p: {
-      textAlign: 'center',
+      textAlign: isXS ? 'left' : 'center',
       fontSize: `${isXS ? 16 : 24}px`,
       color: palette.accents_6
     }
   }
 
   return (
-    <Grid.Container justify="center">
+    <Grid.Container justify={isXS ? 'flex-start' : 'center'}>
       <Text h2 style={styles.title}>{title}</Text>
       <Text p style={styles.p} dangerouslySetInnerHTML={{ __html: content }} />
       <Text p style={styles.p}>{extra && extra}</Text>

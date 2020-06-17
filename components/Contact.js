@@ -25,7 +25,7 @@ const Contact = () => {
   const { palette } = useTheme()
   return (
     <>
-      <Card type='lite' className='custom-card'>
+      <Card type='lite' className='custom-contact'>
         <Grid.Container gap={2} justify="center" style={{ paddingLeft: 0, paddingRight: 0 }}>
           {data.map(i => (
             <Grid xs={24} sm={12} md key={i.title}>
@@ -40,7 +40,7 @@ const Contact = () => {
       </Card>
 
       <style global jsx>{`
-        #__next .custom-card > .content {
+        #__next .custom-contact > .content {
           padding-left: 0;
           padding-right: 0;
         }

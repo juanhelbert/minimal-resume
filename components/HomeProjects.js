@@ -11,12 +11,12 @@ const data = [
     img: '/images/only_one_div.jpg'
   }, {
     title: 'Global Breath',
-    description: 'The need to have it as soon as possible to combat covid-19 globally was a big challenge. The complexity of adding regionalization and having to position it correctly through SEO was also added.',
+    description: 'It wasn\'t a personal project, but I added it here because the need to have it as soon as possible to combat covid-19 globally was a big challenge.',
     web: 'https://theglobalbreath.com/',
     img: '/images/global_breath.jpg'
   }, {
     title: 'Rick and Morty',
-    description: "At that time I was starting with GraphQL so I used it to search and get information about the characters from the Rick and Morty's show.",
+    description: 'At that time I was starting with GraphQL so I used it to search and get information about the characters from the Rick and Morty\'s show.',
     web: 'https://rickandmorty-jh.netlify.app/',
     repo: 'https://github.com/juanhelbert/Rick-and-Morty',
     img: '/images/rick_and_morty.jpg'
@@ -63,7 +63,7 @@ const HomeProjects = () => {
   return (
     <>
       {/* Only one div */}
-      <div className='custom-row' style={{ paddingTop: isSM && 0 }}>
+      <div className='custom-row' style={{ paddingTop: isSM && '12px' }}>
         <Grid.Container justify="space-between">
           <Grid xs={24} md={11}>
             <TextAndButtons title={data[0].title} description={data[0].description} web={data[0].web} repo={data[0].repo} />
@@ -100,7 +100,7 @@ const HomeProjects = () => {
 
       <div className='custom-row'>
         <Grid.Container justify="center">
-          <Link href="/projects"><Button shadow type="success" size='large'>View all projects</Button></Link>
+          <Link href="/projects"><Button shadow type="success" size='large'>View more projects</Button></Link>
         </Grid.Container>
       </div>
 

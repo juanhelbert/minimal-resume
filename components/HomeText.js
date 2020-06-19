@@ -12,7 +12,7 @@ const HomeText = ({ title, content, extra }) => {
     },
     p: {
       textAlign: isXS ? 'left' : 'center',
-      fontSize: `${isXS ? 16 : 24}px`,
+      fontSize: `${isXS ? 18 : 24}px`,
       color: palette.accents_6
     }
   }

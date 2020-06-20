@@ -1,7 +1,6 @@
-import { Text, Button, Col, Row, Link as Zlink } from '@zeit-ui/react'
+import { Text, Button, Col, Row, Link as Zlink, useTheme } from '@zeit-ui/react'
 import { Sun, Moon } from '@zeit-ui/react-icons'
 import Link from 'next/link'
-import { useTheme } from '@zeit-ui/react'
 
 const Header = ({ parentCallback, theme }) => {
   const { palette } = useTheme()

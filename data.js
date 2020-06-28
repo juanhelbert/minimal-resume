@@ -13,7 +13,7 @@ const data = {
       type: ['All', 'Personal'],
       link: 'https://rock-paper-scissors-jh.netlify.app/',
       repo: 'https://github.com/juanhelbert/Rock-paper-scissors',
-      img: '/images/projects/rock_paper_scissors.jpg',
+      img: '/images/projects/rock_paper_scissors.jpg'
     }, {
       title: 'Most populated cities',
       description: 'A reactive app that shows the most populated cities in Argentina on a map.',
@@ -21,7 +21,7 @@ const data = {
       type: ['All', 'Personal'],
       link: 'https://most-populated-cities-jh.netlify.app/',
       repo: 'https://github.com/juanhelbert/Most-populated-cities',
-      img: '/images/projects/map.jpg',
+      img: '/images/projects/map.jpg'
     }, {
       title: 'Lets chat!',
       description: 'A simple chat app made with React, Socket.IO and cool CSS gradients.',
@@ -29,15 +29,15 @@ const data = {
       type: ['All', 'Personal'],
       link: 'https://lets-chat-jh.netlify.app/',
       repo: 'https://github.com/juanhelbert/Lets-chat',
-      img: '/images/projects/lets_chat.jpg',
+      img: '/images/projects/lets_chat.jpg'
     }, {
       title: 'Rick and Morty',
       description: 'An app made with GraphQL to search Rick and Morty\'s characters.',
       tags: ['All', 'GraphQL', 'Apollo', 'React'],
       type: ['All', 'Personal'],
       link: 'https://rickandmorty-jh.netlify.com/',
-      repo: '',
-      img: '/images/projects/rock_paper_scisors.jpg',
+      repo: 'https://github.com/juanhelbert/Rick-and-Morty',
+      img: '/images/rick_and_morty.jpg'
     }, {
       title: 'The Global Breath',
       description: 'The challenge was to have it done ASAP in order to tackle the covid-19 globally.',
@@ -45,15 +45,15 @@ const data = {
       type: ['All', 'Freelance'],
       link: 'https://www.theglobalbreath.com/',
       repo: '',
-      img: '/images/projects/rock_paper_scisors.jpg',
+      img: '/images/global_breath.jpg'
     }, {
       title: 'Expense tracker',
       description: 'An expense tracker made with react context API.',
       tags: ['All', 'useContext', 'localStorage'],
       type: ['All', 'Personal'],
       link: 'https://context-expense-tracker.netlify.com/',
-      repo: '',
-      img: '/images/projects/rock_paper_scisors.jpg',
+      repo: 'https://github.com/juanhelbert/expense-tracker',
+      img: '/images/projects/expense_tracker.jpg',
     }, {
       title: 'Agrofy news',
       description: 'One of the biggest challenges I had, migrating a news site to a new app made 100% with React.',
@@ -61,7 +61,7 @@ const data = {
       type: ['All', 'Job'],
       link: 'https://news.agrofy.com.ar/',
       repo: '',
-      img: '/images/projects/rock_paper_scisors.jpg',
+      img: '/images/projects/agrofy.jpg',
     }, {
       title: 'Tu menu online',
       description: 'It\'s a personal project created to speed up the way food is ordered in restaurants.',
@@ -69,7 +69,7 @@ const data = {
       type: ['All', 'Personal'],
       link: 'https://tumenuonline.com/',
       repo: '',
-      img: '/images/projects/rock_paper_scisors.jpg',
+      img: '/images/projects/tumenu.jpg',
     }, {
       title: 'Mountains',
       description: 'A minimalist app that lists mountains images. I made it to learn about Gatsby and PWA.',
@@ -77,7 +77,7 @@ const data = {
       type: ['All', 'Personal'],
       link: 'https://mountains-hj.netlify.com/',
       repo: '',
-      img: '/images/projects/rock_paper_scisors.jpg',
+      img: '/images/projects/mountains.jpg',
     }, {
       title: 'Congress Members',
       description: 'An application that lists the congress members and offers you the possibility to filter and contact them',
@@ -85,7 +85,7 @@ const data = {
       type: ['All', 'Personal'],
       link: 'https://congressmembers.netlify.com/',
       repo: '',
-      img: '/images/projects/rock_paper_scisors.jpg',
+      img: '/images/projects/congress.jpg',
     }, {
       title: 'Totallia',
       description: 'Totallia was my first site as a freelance developer. I knew very little about Wordpress, but that wasn\'t a barrier',
@@ -93,7 +93,7 @@ const data = {
       type: ['All', 'Freelance'],
       link: 'https://totallia.com/',
       repo: '',
-      img: '/images/projects/rock_paper_scisors.jpg',
+      img: '/images/projects/totallia.jpg',
     }, {
       title: 'Aibild',
       description: 'One of the biggest ecommerce I\'ve ever done. I love the way it looks.',
@@ -101,7 +101,7 @@ const data = {
       type: ['All', 'Job'],
       link: 'https://aibild.com/',
       repo: '',
-      img: '/images/projects/rock_paper_scisors.jpg',
+      img: '/images/projects/aibild.jpg',
     }
   ]
 }

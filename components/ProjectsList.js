@@ -12,7 +12,7 @@ const ProjectsList = ({ data: projects, selectedType, selectedTechnology }) => {
               ? (
                 projects.map(({ img, title, description, tags, link, repo }) =>
                   <Grid xs={24} sm={12} md={8} key={title}>
-                    <Card shadow>
+                    <Card shadow style={{ border: 0 }}>
                       <Image src={img} alt={title} style={{ objectFit: 'cover' }} />
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                         <Text h4 style={{ marginBottom: '0', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>{title} </Text>

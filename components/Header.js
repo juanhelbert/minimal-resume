@@ -13,10 +13,10 @@ const Header = ({ parentCallback, theme }) => {
           <Row align='middle' justify='space-between'>
             <Col>
               <Link href="/">
-                <Zlink style={{ marginRight: '15px' }}>Home</Zlink>
+                <Zlink style={{ marginRight: '24px' }}>Home</Zlink>
               </Link>
               <Link href="/projects">
-                <Zlink style={{ marginRight: '15px' }}>Projects</Zlink>
+                <Zlink style={{ marginRight: '24px' }}>Projects</Zlink>
               </Link>
             </Col>
             <Button

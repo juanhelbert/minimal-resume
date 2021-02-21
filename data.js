@@ -42,7 +42,7 @@ const data = {
       title: 'The Global Breath',
       description: 'The challenge was to have it done ASAP in order to tackle the covid-19 globally.',
       tags: ['All', 'NextJs', 'React', 'SEO', 'Translations'],
-      type: ['All', 'Freelance'],
+      type: ['All', 'Freelance', 'SEO'],
       link: 'https://www.theglobalbreath.com/',
       repo: '',
       img: '/images/global_breath.jpg'
@@ -67,7 +67,7 @@ const data = {
       description: 'It\'s a personal project created to speed up the way food is ordered in restaurants.',
       tags: ['All', 'React', 'SVG', 'Figma'],
       type: ['All', 'Personal'],
-      link: 'https://tumenuonline.com/',
+      link: 'https://tumenuonline.netlify.app/',
       repo: '',
       img: '/images/projects/tumenu.jpg',
     }, {

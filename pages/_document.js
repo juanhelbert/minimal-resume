@@ -30,8 +30,8 @@ class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.gstatic.com/" />
           <link rel="dns-prefetch" href="https://www.google-analytics.com" />
           <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-          <link href="https://www.google-analytics.com" rel="preconnect" crossorigin />
-          <link href="https://www.googletagmanager.com" rel="preconnect" crossorigin />
+          <link href="https://www.google-analytics.com" rel="preconnect" crossOrigin />
+          <link href="https://www.googletagmanager.com" rel="preconnect" crossOrigin />
         </Head>
         <body>
           <script dangerouslySetInnerHTML={{
@@ -46,7 +46,7 @@ class MyDocument extends Document {
           `}} />
           <Main />
           <NextScript />
-          {/* <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168587762-1"></script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168587762-1"></script>
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -57,7 +57,7 @@ class MyDocument extends Document {
             gtag('config', 'UA-168587762-1')
               `,
             }}
-          /> */}
+          />
         </body>
       </Html>
     );

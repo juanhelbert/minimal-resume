@@ -22,7 +22,7 @@ const IntroWrapper = () => {
           <Link href="#contact"><Button shadow type="success">Contact me</Button></Link>
         </Grid>
         <Grid>
-          <Link href="/projects"><Button shadow style={{ color: palette.accents_7, borderColor: palette.accents_7 }}>View projects</Button></Link>
+          <Link href="#home-projects"><Button shadow style={{ color: palette.accents_7, borderColor: palette.accents_7 }}>View projects</Button></Link>
         </Grid>
       </Grid.Container>
 

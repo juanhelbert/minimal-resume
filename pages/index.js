@@ -24,12 +24,14 @@ export default function Home() {
         extra={"I started in the world of web development when I was very young, but I have been working on it formally since 2017, when I started working for different companies. I invite you to see some projects I've worked on and contact me if you want to know more about me."}
       />
       <Spacer y={12} />
-      <HomeText
-        title='A web enthusiast'
-        content={`As a Frontend developer I have developed a lot of sites, always keeping the focus on <b style="color: ${palette.accents_7}">UI/UX</b>, the <b style="color: ${palette.accents_7}">accessibility</b> and never leaving aside the <b style="color: ${palette.accents_7}">performance</b>. `}
-        extra={'Usually, I also come up with some personal ideas and implement them through small projects, here are some of them'}
-      />
-      <HomeProjects />
+      <div id='home-projects'>
+        <HomeText
+          title='A web enthusiast'
+          content={`As a Frontend developer I have developed a lot of sites, always keeping the focus on <b style="color: ${palette.accents_7}">UI/UX</b>, the <b style="color: ${palette.accents_7}">accessibility</b> and never leaving aside the <b style="color: ${palette.accents_7}">performance</b>. `}
+          extra={'Usually, I also come up with some personal ideas and implement them through small projects, here are some of them'}
+        />
+        <HomeProjects />
+      </div>
       <Spacer y={12} />
       <div id='contact'>
         <HomeText title='Contact' />

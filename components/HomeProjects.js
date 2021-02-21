@@ -54,8 +54,10 @@ const HomeProjects = () => {
 
   const ProjectImage = ({ web, img, title }) => {
     return (
-      <Image.Browser url={web}>
-        <Image width="540" height="246" src={img} alt={title} />
+      <Image.Browser>
+        <a href={web}>
+          <Image width="540" height="246" src={img} alt={title} />
+        </a>
       </Image.Browser>
     )
   }
